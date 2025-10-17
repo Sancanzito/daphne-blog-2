@@ -18,20 +18,26 @@
         }
         
         body {
-            position: fixed;
-            inset: 0;               /* top:0; right:0; bottom:0; left:0 */
-            background-image: url('https://media.istockphoto.com/id/1943878195/vector/valentines-day-card-with-cute-hearts-icon-symbol.jpg?s=1024x1024&w=is&k=20&c=I_xPVcvgUVw8cVt9bjfNIxoUhQ2MpgT2jIOZKf_XCsc=');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: blur(8px) brightness(0.9); /* change blur(px) to taste */
-            transform: scale(1.03);             /* prevents edges showing through when blurred */
-            z-index: -1;
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
-            line-height: 1.7;
-        }
-        
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url('https://media.istockphoto.com/id/1943878195/vector/valentines-day-card-with-cute-hearts-icon-symbol.jpg?s=1024x1024&w=is&k=20&c=I_xPVcvgUVw8cVt9bjfNIxoUhQ2MpgT2jIOZKf_XCsc=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px) brightness(0.9);
+    transform: scale(1.03);
+    z-index: -1;
+
         h1, h2, h3, h4, h5 {
             font-family: 'Crimson Text', serif;
             font-weight: 700;
@@ -251,6 +257,7 @@
 </body>
 
 </html>
+
 
 
 
